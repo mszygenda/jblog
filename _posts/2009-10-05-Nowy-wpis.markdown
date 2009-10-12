@@ -1,1 +1,8 @@
+---
+layout: post
+title: Moj nowy wpis
+---
+
+# {{ page.title }}
+<br />
 Ostra modyfikacja
