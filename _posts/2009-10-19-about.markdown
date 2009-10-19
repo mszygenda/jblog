@@ -1,0 +1,6 @@
+---
+layout: post
+title: Co nowego
+---
+
+Dodałem linki do kilku projektów w których brałem udział (LinQQ, aqqlib, ExamInfo, Zapodaj Uploader).

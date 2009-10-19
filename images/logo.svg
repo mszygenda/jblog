@@ -13,7 +13,7 @@
    id="svg12"
    sodipodi:version="0.32"
    inkscape:version="0.46"
-   sodipodi:docname="blog.svg"
+   sodipodi:docname="logo.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    inkscape:export-filename="/home/wbzyl/public_git/tutorials/rails3-tutorial/lib/public/images/rails3.png"
    inkscape:export-xdpi="60"
@@ -41,10 +41,10 @@
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:window-width="1274"
-     inkscape:window-height="724"
+     inkscape:window-width="1024"
+     inkscape:window-height="716"
      inkscape:window-x="0"
-     inkscape:window-y="25" />
+     inkscape:window-y="0" />
   <metadata
      id="metadata17">
     <rdf:RDF>
@@ -63,9 +63,9 @@
      inkscape:groupmode="layer">
     <text
        xml:space="preserve"
-       style="font-size:56;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#a39668;font-family:Cyklop;-inkscape-font-specification:Cyklop Italic;fill-opacity:1"
-       x="44.192635"
-       y="111.69319"
+       style="font-size:56px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#a39668;fill-opacity:1;font-family:Cyklop;-inkscape-font-specification:Cyklop Italic"
+       x="28.924246"
+       y="110.73891"
        id="text2018"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/wbzyl/public_git/tutorials/rails3-tutorial/lib/public/images/rails3.png"
@@ -73,8 +73,8 @@
        inkscape:export-ydpi="60"><tspan
          sodipodi:role="line"
          id="tspan2020"
-         x="44.192635"
-         y="111.69319">WB</tspan></text>
+         x="28.924246"
+         y="110.73891">szygi</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:56px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#489690;font-family:Cyklop;-inkscape-font-specification:Cyklop Italic;fill-opacity:1"
