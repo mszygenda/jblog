@@ -24,15 +24,13 @@ Znajdź w swoim katalogu domowym wszystkie pliki, które nie były używane w ci
 #Zadanie 4
 Znajdź w katalogu /etc wszystkie niepuste podkatalogi i pliki o nazwach zaczynających się na literę „a”.
 <pre>
-find /etc -type f -name a\* -or -type d -mindepth 2 ! -empty 2> /dev/null
+find /etc \( -type f -and -name a* \) -or \( -type d -and ! -empty \) 2> /dev/null
 </pre>
 
 #Zadanie 5
 Z bieżącego katalogu usuń pliki, których nazwa zaczyna się na literę „x” i zawiera dokładnie trzy znaki.
 <pre>
-[mszygenda@sigma ~]$ touch xaa
-[mszygenda@sigma ~]$ touch xab
-[mszygenda@sigma ~]$ touch xac
+[mszygenda@sigma ~]$ touch xaa xab xac
 [mszygenda@sigma ~]$ ls x\*
 xaa  xab  xac
 [mszygenda@sigma ~]$ rm x??
