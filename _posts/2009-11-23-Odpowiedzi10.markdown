@@ -1,0 +1,7 @@
+---
+layout: post
+title: Latex! Lab10
+---
+
+#Przykladowy dokument z graphicx
+<a href="/~mszygenda/upload/latex_example.zip">Download</a>

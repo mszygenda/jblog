@@ -1,0 +1,82 @@
+---
+title: Grep
+layout: post
+---
+
+#Nietrywialne polecenie grepa - Adres Email
+
+
+> <a href="http://en.wikipedia.org/wiki/E-mail_address#RFC_specification">Specyfikacja (wikipedia.org)</a> nazwy uzytkownika(Przed znakiem @).
+<div class="external_info">
+The local-part of the e-mail address may use any of these ASCII characters:
+
+    * Uppercase and lowercase English letters (a-z, A-Z)
+    * Digits 0 to 9
+    * Characters ! # $ % & ' * + - / = ? ^ _ ` { | } ~
+    * Character . (dot, period, full stop) provided that it is not the first or last character, and provided also that it does not appear two or more times consecutively.
+
+</div>
+
+<br />
+Nazwa uzytkownika musi skladac sie z malych lub duzych angielskich liter, cyfr oraz wymienionych znakow specjalnych. Nie moze zaczynac ani konczyc sie kropka (.). Kropka nie moze tez wystepowac wiecej niz jeden raz w ciagu (tzn. nazwa..cos@o2.pl jest niepoprawny)
+
+##Wyrazenie sprawdzajace nazwe uzytkownika
+
+>Pierwszy znak(Bez kropki)
+
+<pre>
+ ^[a-Z0-9&=?^\`#\'*/}{|~%+-\!\$_]{1}
+</pre>
+<br />
+<br />
+>Dalsza czesc nazwy (Kropka nie moze wystepowac po sobie)
+
+<pre>
+(\.{0,1}[a-Z0-9&=?^\`#\'*/}{|~%+-\!\$_]{1,}){0,}
+</pre>
+<br />
+<br />
+
+>Ostatni znak(Rowniez bez kropki)
+
+<pre>
+[a-Z0-9&=?^\`#\'*/}{|~%+-\!\$_]{1}
+</pre>
+<br />
+<br />
+
+
+##Cale wyrazenie sprawdzajace nazwe uzytkownika
+<pre>
+^[a-Z0-9&=?^\`#\'*/}{|~%+-\!\$_]{1}(\.{0,1}[a-Z0-9&=?^\`#\'*/}{|~%+-\!\$_]{1,}){0,}[a-Z0-9&=?^\`#\'*/}{|~%+-\!\$_]{1}
+</pre>
+<br />
+<br />
+
+##Domena
+> <a href="http://en.wikipedia.org/wiki/E-mail_address#RFC_specification">Specyfikacja (wikipedia.org)</a> domeny(Po znaku @).
+<div class="external_info">The domain name is much more restricted: it must match the requirements for a hostname, consisting of letters, digits, hyphens and dots. In addition, the domain may be an IP address literal, surrounded by square braces, such as jsmith@[192.168.2.1] (this is rarely seen, except in spam).</div>
+
+Domena moze sie skladac wylacznie z liter, cyfr,(lacznikow -), oraz kropki. Moze byc wyrazona rowniez jako adres ip objety w nawiasy kwadratowe
+
+>Nazwa domeny
+<pre>([a-Z0-9.-]+\.[a-Z]{2,4})</pre>
+<br />
+<br />
+
+>Lub adres ip ujety w nawiasy kwadratowe
+<pre>([(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9\
+]?)\]$)</pre>
+<br />
+<br />
+>Cala domena
+<pre>
+([a-Z0-9.-]+\.[a-Z]{2,4})|([(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9\
+]?)\]
+</pre>
+<br />
+<br />
+##Gotowe wyrazenie
+<pre>
+egrep -e "^[a-Z0-9&=?^\`#\'*/}{|~%+-\!\$_]{1}(\.{0,1}[a-Z0-9&=?^\`#\'*/}{|~%+-\!\$_]{1,}){0,}[a-Z0-9&=?^\`#\'*/}{|~%+-\!\$_]{1}@([a-Z0-9.-]+\.[a-Z]{2,4})|(\[(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\]$)"
+</pre>

@@ -12,7 +12,7 @@ Znajdź w swoim katalogu domowym (bez podkatalogów) wszystkie pliki, które zos
 #Zadanie 2
 Znajdź wszystkie pliki zwykłe w systemie, które mają w nazwie ciąg znaków „conf” i wyświetl ich nazwy na ekranie.
 <pre>
-[mszygenda@sigma ~]$ find / -name \*conf\* -type f 2> /dev/null
+[mszygenda@sigma ~]$ find / -name *conf* -type f 2> /dev/null
 </pre>
 
 #Zadanie 3
@@ -31,18 +31,18 @@ find /etc \( -type f -and -name a* \) -or \( -type d -and ! -empty \) 2> /dev/nu
 Z bieżącego katalogu usuń pliki, których nazwa zaczyna się na literę „x” i zawiera dokładnie trzy znaki.
 <pre>
 [mszygenda@sigma ~]$ touch xaa xab xac
-[mszygenda@sigma ~]$ ls x\*
+[mszygenda@sigma ~]$ ls x*
 xaa  xab  xac
 [mszygenda@sigma ~]$ rm x??
-[mszygenda@sigma ~]$ ls x\*
-ls: nie ma dostępu do x\*: Nie ma takiego pliku ani katalogu
+[mszygenda@sigma ~]$ ls x*
+ls: nie ma dostępu do x*: Nie ma takiego pliku ani katalogu
 [mszygenda@sigma ~]$
 </pre>
 
 #Zadanie 6
 Skonstruuj polecenie tworzące katalog, którego nazwą będzie aktualna (w momencie wywołania) systemowa data w formacie
 <pre>
-[mszygenda@sigma tmp]$ mkdir \`date +%Y-%m-%d\`
+[mszygenda@sigma tmp]$ mkdir `date +%Y-%m-%d`
 </pre>
 
 #Zadanie 7
