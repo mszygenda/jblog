@@ -4,7 +4,7 @@ title: Odpowiedzi do laboratorium 7 ( Skrypty )
 ---
 
 #Zadanie 1
-W bie¿±cym katalogu zamieniæ rozszerzenia wszystkich plików z rozszerzeniem htm na html. Je¿eli w nazwie pliku istnieje spacja, to nale¿y zamieniæ j± na znak podkre¶lenia.
+W bieÅ¼Ä…cym katalogu zamieniÄ‡ rozszerzenia wszystkich plikÃ³w z rozszerzeniem htm na html. JeÅ¼eli w nazwie pliku istnieje spacja, to naleÅ¼y zamieniÄ‡ jÄ… na znak podkreÅ›lenia.
 <br />
 tohtml.sh
 <pre>
@@ -20,7 +20,7 @@ done
 </pre>
 
 #Zadanie 2
-Napisaæ skrypt zawieraj±cy funkcjê obliczaj±c± silniê. Nastêpnie nale¿y obliczyæ silniê z liczby, która jest argumentem skryptu. W przypadku niepoprawnego argumentu nale¿y wypisaæ odpowiedni komunikat.
+NapisaÄ‡ skrypt zawierajÄ…cy funkcjÄ™ obliczajÄ…cÄ… silniÄ™. NastÄ™pnie naleÅ¼y obliczyÄ‡ silniÄ™ z liczby, ktÃ³ra jest argumentem skryptu. W przypadku niepoprawnego argumentu naleÅ¼y wypisaÄ‡ odpowiedni komunikat.
 <br />
 silnia.sh
 <pre>
@@ -28,7 +28,7 @@ silnia.sh
 # Mateusz Szygenda
 # Uzycie:
 # silnia.sh Argument1 Argument2 Argument3 ... ArgumentN
-# Gdzie Argument1,Argument2,Argument3 to liczby naturalne dla których skrypt powinien policzyæ silnie
+# Gdzie Argument1,Argument2,Argument3 to liczby naturalne dla ktÃ³rych skrypt powinien policzyÄ‡ silnie
 # Wynik:
 # Silnia dla Argument1 = Argument1! ...
 # lub Argument nie jest poprawny
@@ -53,7 +53,7 @@ done
 
 
 #Zadanie 3
-Napisaæ skrypt zbieraj±cy jak najwiêcej informacji o u¿ytkowniku, którego login jest argumentem skryptu. Je¿eli skrypt nie ma argumentu, to nale¿y u¿yæ login osoby uruchamiaj±cej skrypt.
+NapisaÄ‡ skrypt zbierajÄ…cy jak najwiÄ™cej informacji o uÅ¼ytkowniku, ktÃ³rego login jest argumentem skryptu. JeÅ¼eli skrypt nie ma argumentu, to naleÅ¼y uÅ¼yÄ‡ login osoby uruchamiajÄ…cej skrypt.
 <br />
 userinfo.sh
 <pre>
@@ -95,7 +95,7 @@ fi
 
 </pre>
 #Zadanie 4
-Napisz skrypt usuwaj±cy z katalogu domowego i jego podkatalogów wszystkie pliki zwyk³e o nazwie 'core' starsze ni¿ 3 dni.
+Napisz skrypt usuwajÄ…cy z katalogu domowego i jego podkatalogÃ³w wszystkie pliki zwykÅ‚e o nazwie 'core' starsze niÅ¼ 3 dni.
 <br />
 cleaner.sh
 <pre>
