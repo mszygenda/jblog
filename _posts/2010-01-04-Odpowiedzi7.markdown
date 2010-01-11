@@ -9,6 +9,9 @@ W bieżącym katalogu zamienić rozszerzenia wszystkich plików z rozszerzeniem 
 tohtml.sh
 <pre>
 #!/bin/bash
+# Mateusz Szygenda
+# Uzycie
+# ./tohtml.sh
 IFS='
 '
 files=(`find \`pwd\` -maxdepth 1 -iname "*.htm" `)
@@ -101,8 +104,6 @@ cleaner.sh
 <pre>
 #!/bin/bash
 # Mateusz Szygenda
-IFS='
-'
-files=`find ~ -name "core" -ctime +3  -type f | xargs -I file rm "$file" `
+`find ~ -name "core" -ctime +3  -type f | xargs -I file rm "$file" `
 echo "Milego dnia! :)"
 </pre>
